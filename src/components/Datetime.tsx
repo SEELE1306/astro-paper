@@ -8,11 +8,13 @@ interface DatetimesProps {
 interface Props extends DatetimesProps {
   size?: "sm" | "lg";
   className?: string;
+  readingTime?: string;
 }
 
 export default function Datetime({
   pubDatetime,
   modDatetime,
+  readingTime,
   size = "sm",
   className = "",
 }: Props) {
@@ -42,6 +44,7 @@ export default function Datetime({
           pubDatetime={pubDatetime}
           modDatetime={modDatetime}
         />
+        <span> ({readingTime})</span> {/* display reading time */}
       </span>
     </div>
   );

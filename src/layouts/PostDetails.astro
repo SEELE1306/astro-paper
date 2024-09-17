@@ -21,7 +21,8 @@ const {
   author,
   description,
   ogImage,
-  canonicalURL,
+  // canonicalURL, We don't use this anymore
+  readingTime, // we can now directly access readingTime from frontmatter
   pubDatetime,
   modDatetime,
   tags,
@@ -41,7 +42,8 @@ const layoutProps = {
   description,
   pubDatetime,
   modDatetime,
-  canonicalURL,
+  readingTime,
+  // canonicalURL, We don't use this anymore
   ogImage: ogUrl,
   scrollSmooth: true,
 };
@@ -76,12 +78,15 @@ const nextPost =
     </button>
   </div>
   <main id="main-content">
-    <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
+    <h1 transition:name={slugifyStr(title)} class="post-title font-serif">
+      {title}
+    </h1>
     <Datetime
       pubDatetime={pubDatetime}
       modDatetime={modDatetime}
       size="lg"
       className="my-2"
+      readingTime={readingTime}
     />
     <article id="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />

@@ -206,7 +206,13 @@ const socialIcons = {
   q-43 -8 -67 -30q-29 -25 -35 -72q-2 -14 -2 -29l25 6q31 6 65 10q48 7 93 9q42 2 92 -2q32 -2 88 -9t107 -30q49 -23 81.5 -54.5t38.5 -63.5q9 -45 13 -109q4 -46 5 -97v-41q0 -56 -14 -103q-11 -40 -32 -73q-16 -26 -38 -47q-15 -15 -32 -25q-12 -8 -14 -8
   q-46 -22 -127 -33q-74 -10 -166 -11h-3zM367 267q73 0 109 56l24 39l24 -39q36 -56 109 -56q63 0 101 43t38 117v239h-95v-232q0 -74 -61 -74q-69 0 -69 88v127h-94v-127q0 -88 -69 -88q-61 0 -61 74v232h-95v-239q0 -74 38 -117t101 -43z" />
   </svg>`,
-  Unsplash: `<svg fill="#0000" viewBox="-4.32 -4.32 32.64 32.64" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#0000" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" stroke-width="0.4800000000000001"><title>Unsplash icon</title><path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"></path></g><g id="SVGRepo_iconCarrier"><title>Unsplash icon</title><path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z"></path></g></svg>`,
+  Unsplash: `<svg 
+  xmlns="http://www.w3.org/2000/svg"   
+  stroke-linecap="round"  
+  stroke-linejoin="round"  
+  class="icon-tabler">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 11h5v4h6v-4h5v9h-16zm5 -7h6v4h-6z" /></svg>`,
 };
 
 export default socialIcons;

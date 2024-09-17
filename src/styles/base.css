@@ -13,12 +13,12 @@
     --color-border: 236, 233, 233;
   }
   html[data-theme="dark"] {
-    --color-fill: 33, 39, 55;
+    --color-fill: 38, 38, 38;
     --color-text-base: 234, 237, 243;
-    --color-accent: 255, 107, 1;
-    --color-card: 52, 63, 96;
-    --color-card-muted: 138, 51, 2;
-    --color-border: 171, 75, 8;
+    --color-accent: 165, 117, 98;
+    --color-card: 49, 49, 49;
+    --color-card-muted: 57, 57, 57;
+    --color-border: 136, 95, 78;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -29,14 +29,14 @@
     display: block;
   }
   body {
-    @apply flex min-h-[100svh] flex-col bg-skin-fill font-mono text-skin-base selection:bg-skin-accent/70 selection:text-skin-inverted;
+    @apply flex min-h-[100svh] flex-col bg-skin-fill text-skin-base selection:bg-skin-accent/70 selection:text-skin-inverted;
   }
   section,
   footer {
     @apply mx-auto max-w-3xl px-4;
   }
   a {
-    @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
+    @apply font-serif outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
   svg {
     @apply inline-block h-6 w-6 fill-skin-base group-hover:fill-skin-accent;
