@@ -2,7 +2,7 @@
 title: Initial targets for the website
 author: Aoi
 pubDatetime: 2024-09-17T12:13:31.923Z
-modDatetime: 2024-09-17T12:20:44.879Z
+modDatetime: 2024-09-18T09:19:43.375Z
 slug: initial-targets-for-the-website
 featured: true
 draft: false
