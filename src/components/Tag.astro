@@ -19,9 +19,9 @@ const { tag, size = "sm" } = Astro.props;
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class={`${size === "sm" ? " scale-75" : "scale-110"}`}
+      class={`${size === "sm" ? " scale-50" : "scale-75"}`}
       ><path
-        d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z"
+        d="M11.172 2a3 3 0 0 1 2.121 .879l7.71 7.71a3.41 3.41 0 0 1 0 4.822l-5.592 5.592a3.41 3.41 0 0 1 -4.822 0l-7.71 -7.71a3 3 0 0 1 -.879 -2.121v-5.172a4 4 0 0 1 4 -4zm-3.672 3.5a2 2 0 0 0 -1.995 1.85l-.005 .15a2 2 0 1 0 2 -2"
       ></path>
     </svg>
     &nbsp;<span>{tag}</span>
@@ -30,9 +30,9 @@ const { tag, size = "sm" } = Astro.props;
 
 <style>
   a {
-    @apply relative underline decoration-dashed hover:-top-0.5 hover:text-skin-accent focus-visible:p-1;
+    @apply relative rounded-lg bg-skin-card p-1 duration-200 ease-in-out hover:text-skin-accent focus-visible:p-1;
   }
   a svg {
-    @apply -mr-5 h-6 w-6 scale-95 text-skin-base opacity-80 group-hover:fill-skin-accent;
+    @apply -mr-2 h-6 w-6 text-skin-base opacity-80 duration-200 ease-in-out group-hover:fill-skin-accent;
   }
 </style>
