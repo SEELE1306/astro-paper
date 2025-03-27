@@ -20,31 +20,10 @@ const { tag, tagName, size = "sm" } = Astro.props;
     href={`/tags/${tag}/`}
     transition:name={tag}
     class:list={[
-      "relative pr-2 text-lg underline decoration-dashed group-hover:-top-0.5 group-hover:text-accent focus-visible:p-1",
+      "relative pr-2 text-lg underline group-hover:-top-0.5 group-hover:text-accent focus-visible:p-1",
       { "text-sm": size === "sm" },
     ]}
   >
-<<<<<<< HEAD
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class={`${size === "sm" ? " scale-50" : "scale-75"}`}
-      ><path
-        d="M11.172 2a3 3 0 0 1 2.121 .879l7.71 7.71a3.41 3.41 0 0 1 0 4.822l-5.592 5.592a3.41 3.41 0 0 1 -4.822 0l-7.71 -7.71a3 3 0 0 1 -.879 -2.121v-5.172a4 4 0 0 1 4 -4zm-3.672 3.5a2 2 0 0 0 -1.995 1.85l-.005 .15a2 2 0 1 0 2 -2"
-      ></path>
-    </svg>
-    &nbsp;<span>{tag}</span>
-  </a>
-</li>
-
-<style>
-  a {
-    @apply relative rounded-lg bg-skin-card p-1 duration-200 ease-in-out hover:text-skin-accent focus-visible:p-1;
-  }
-  a svg {
-    @apply -mr-2 h-6 w-6 text-skin-base opacity-80 duration-200 ease-in-out group-hover:fill-skin-accent;
-  }
-</style>
-=======
     <IconHash
       class:list={[
         "inline-block opacity-80",
@@ -55,4 +34,3 @@ const { tag, tagName, size = "sm" } = Astro.props;
     &nbsp;<span>{tagName}</span>
   </a>
 </li>
->>>>>>> upstream/main

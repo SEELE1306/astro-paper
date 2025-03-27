@@ -5,19 +5,19 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
+  --background: #fbfefb;
   --foreground: #282728;
   --accent: #006cac;
-  --muted: #e6e6e6;
+  --muted: #cdcdcd;
   --border: #ece9e9;
 }
 
 html[data-theme="dark"] {
-  --background: #212737;
+  --background: #262626;
   --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --muted: #343f60bf;
-  --border: #ab4b08;
+  --accent: #a57562;
+  --muted: #393939;
+  --border: #885f4e;
 }
 
 @theme inline {
@@ -26,6 +26,9 @@ html[data-theme="dark"] {
   --color-accent: var(--accent);
   --color-muted: var(--muted);
   --color-border: var(--border);
+
+  --font-display: "Inter", "sans-serif";
+
 }
 
 @layer base {
@@ -38,11 +41,11 @@ html[data-theme="dark"] {
     @apply overflow-y-scroll scroll-smooth;
   }
   body {
-    @apply flex min-h-svh flex-col bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+    @apply flex min-h-svh flex-col bg-background font-display text-foreground selection:bg-accent/75 selection:text-background;
   }
   a,
   button {
-    @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2 focus-visible:outline-dashed;
+    @apply outline-offset-1 outline-accent focus-visible:no-underline focus-visible:outline-2;
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
