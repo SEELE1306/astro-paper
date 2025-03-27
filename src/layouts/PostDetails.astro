@@ -25,7 +25,6 @@ const {
   title,
   author,
   description,
-  readingTime, // we can now directly access readingTime from frontmatter
   ogImage: initOgImage,
   canonicalURL,
   pubDatetime,
@@ -62,7 +61,6 @@ const layoutProps = {
   description,
   pubDatetime,
   modDatetime,
-  readingTime,
   canonicalURL,
   ogImage,
   scrollSmooth: true,
@@ -95,7 +93,7 @@ const nextPost =
   >
     <h1
       transition:name={slugifyStr(title)}
-      class="inline-block text-2xl font-bold text-accent sm:text-3xl"
+      class="inline-block text-3xl font-extrabold font-header text-accent sm:text-4xl"
     >
       {title}
     </h1>

@@ -6,26 +6,21 @@ import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
+import IconUnsplash from "@/assets/icons/IconUnsplash.svg";
 import { SITE } from "@/config";
 
 export const SOCIALS = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/SEELE1306",
     linkTitle: ` ${SITE.title} on Github`,
     icon: IconGitHub,
   },
   {
-    name: "X",
-    href: "https://x.com/username",
-    linkTitle: `${SITE.title} on X`,
-    icon: IconBrandX,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    icon: IconLinkedin,
+    name: "Unsplash",
+    href: "https://unsplash.com/@seele1306",
+    linkTitle: ` ${SITE.title} on Unsplash`,
+    icon: IconUnsplash,
   },
   {
     name: "Mail",

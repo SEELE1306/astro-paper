@@ -29,8 +29,8 @@ const latestDatetime =
   modDatetime && modDatetime > pubDatetime ? modDatetime : pubDatetime;
 const datetime = dayjs(latestDatetime).tz(postTimezone || SITE.timezone);
 
-const date = datetime.format("D MMM, YYYY"); // e.g., '22 Mar, 2025'
-const time = datetime.format("hh:mm A"); // e.g., '08:30 PM'
+const date = datetime.format("DD.MM.YYYY"); // e.g., '22.03.2025'
+const time = datetime.format("H:mm"); // e.g., '22:30'
 ---
 
 <div class:list={["flex items-end space-x-2 opacity-80", className]}>
